@@ -1,0 +1,138 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.logo{
+  width: 150px;
+
+}
+
+.page{
+  grid-area: menu;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #071952;
+  padding: 10px;
+
+  & h1 {
+    font-size: 30px;
+    font-family: "Roboto";
+    color: white;
+  }
+
+}
+
+.asidebar-left{
+  grid-area: menu;
+  display: flex;
+  background-color: #EBF4F6;
+  flex-direction: column;
+  padding: 20px;
+
+  & h3{
+    font-family: "Roboto";
+    text-align: start;
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+
+  & a{
+    display: flex;
+    font-size: 15px;
+    font-family: "Roboto";
+    text-decoration: none;
+    color: black;
+  }
+  
+  & a span {
+    padding-left: 5px;
+    color: grey;
+  }
+
+  & ul {
+    list-style: none;
+  }
+
+  & ul li {
+    padding: 6px 0px;
+  }
+}
+
+.main-container {
+  grid-area: main;
+}
+
+section {
+  background-color: #EBF4F6;
+  display: grid;
+  grid-template-columns: 1.3fr 1.4fr 1.3fr;
+  grid-template-rows: 1.2fr 1.2fr;
+  gap: 0px 0px;
+  padding: 40px 4%;
+}
+
+
+.products {
+  margin: 2%;
+  background-color: #789DBC;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  & img {
+      width: 70%;
+      height: 50%;
+      display: flex;
+      margin: 30px auto 0 auto;
+      border-radius: 20px;
+  }
+  & h3 {
+      height: 30px;
+      font-size: 20px;
+      margin-top: 35px;
+      display: flex;
+      justify-content: center;
+      font-family: "Roboto";
+  }
+  & h4 {
+      margin-top: 5%;
+      font-size: 15px;
+      font-family: "Roboto";
+  }
+  & button {
+      width: 70%;
+      height: 40px;
+      margin: 20px auto;
+      font-size: 15px;
+      background-color: white;
+      border-radius: 8px;
+      font-family: "Roboto";
+  }
+}
+
+.footer {
+  grid-area: footer;
+}
+
+footer {
+  background-color: #071952;
+  display: flex;
+  & h6 {
+      margin: auto;
+      font-size: 20px;
+      padding: 10px;
+      color: white;
+  }
+}
+
+
+.container {
+  display: grid; 
+  grid-template-areas: 
+  "header header" 
+  "menu main"
+  "footer footer";
+  gap: 0px;
+}
