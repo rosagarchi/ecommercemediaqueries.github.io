@@ -1,1 +1,3 @@
-# ecommercemediaqueries.github.io
+# Ecommerce utilizando Media Queries
+
+- Para visualizarlo ingresar a:
